@@ -41,7 +41,10 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
+    transition: .3s;
+}
+.header .sticky {
+    background: var(--bg-color);
 }
 
 .logo {
@@ -82,6 +85,10 @@ section {
     display: flex;
     align-items: center;
     padding: 0 10%;
+    background: url('/image/About.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .home-content {
@@ -597,3 +604,5 @@ span{
 .footer-iconTop a:hover i {
     color: var(--main-color);
 }
+
+/*Break Point*/
