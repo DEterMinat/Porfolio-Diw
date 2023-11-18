@@ -85,7 +85,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    background: url('/image/About.jpg') no-repeat;
+    background: url('/image/home.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -115,6 +115,22 @@ section {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+}
+.home-content .text-animate h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
 }
 
 .home-content p {
@@ -721,6 +737,28 @@ span{
 
     .footer p {
         margin-top: 2rem;
+        text-align: center;
     }
 
+}
+@media (max-width: 371px) {
+    .home{
+        justify-content: center;
+    }
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+}
+
+/* KEYFRAME */
+@keyframes homeBgText {
+    
 }
