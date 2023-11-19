@@ -260,7 +260,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 45%;
+    width: 0%;
     height: 100%;
     background: transparent;
     transition: 3s;
@@ -745,7 +745,7 @@ section:nth-child(odd) .animate.scroll,
     .navbar {
         position: absolute;
         top: 100%;
-        left: -100%;
+        left: 0;
         width: 100%;
         padding: 1rem 4%;
         background: var(--bg-color);
@@ -771,6 +771,7 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: 0s;
     }
     .navbar .active .active-nav{
+        left: 0;
         transition-delay: .25s;
     }
 
